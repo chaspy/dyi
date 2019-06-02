@@ -7,4 +7,8 @@ class User < ApplicationRecord
   has_many :event, through: :event_user
   has_many :group_user, dependent: :destroy
   has_many :group, through: :group_user
+  
+  def self.create_unique_string
+    SecureRandom.uuid
+  end
 end
