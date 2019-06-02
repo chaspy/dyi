@@ -3,11 +3,13 @@
 one:
   name: one
   profile: MyText
+  email: one-11111111-github@example.com
   provider: github
   uid: 11111111
 
 two:
   name: two
   profile: MyText
+  email: two-22222222-github@example.com
   provider: github
   uid: 22222222
