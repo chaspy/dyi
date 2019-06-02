@@ -1,24 +1,26 @@
-# README
+# dyi
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+"Discuss Your Interest" with Rails 6.0 Application
 
-Things you may want to cover:
+This app aims to share the content of the discussion in the event for discussion.
 
-* Ruby version
+## Dependencies
 
-* System dependencies
+- Ruby 2.6.2
+- Ruby on Rails 6.0.0
+- Postgresql 9.5
 
-* Configuration
+## Getting stated
 
-* Database creation
+### on local
 
-* Database initialization
+```
+$ bundle
+$ rails s
+```
 
-* How to run the test suite
+### on docker
+TBD
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+[MIT](https://github.com/chaspy/dyi/blob/master/LICENSE)
