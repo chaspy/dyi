@@ -2,8 +2,8 @@
 
 one:
   event: one
-  user: 
+  user: one
 
 two:
   event: two
-  user: 
+  user: two
