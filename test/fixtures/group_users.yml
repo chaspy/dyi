@@ -2,8 +2,8 @@
 
 one:
   group: one
-  user: 
+  user: one
 
 two:
   group: two
-  user: 
+  user: two
