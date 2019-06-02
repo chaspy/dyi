@@ -1,4 +1,5 @@
 # dyi
+[![CircleCI](https://circleci.com/gh/chaspy/dyi.svg?style=svg)](https://circleci.com/gh/chaspy/dyi)
 
 "Discuss Your Interest" with Rails 6.0 Application
 
