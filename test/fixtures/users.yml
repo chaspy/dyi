@@ -3,7 +3,11 @@
 one:
   name: MyString
   profile: MyText
+  provider: github
+  uid: 11111111
 
 two:
   name: MyString
   profile: MyText
+  provider: github
+  uid: 22222222
