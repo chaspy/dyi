@@ -24,7 +24,7 @@ jobs:
       - run:
           name: bundle install
           command: |
-            bundle check || bundle install
+            bundle check --path=vendor/bundle || bundle install --clean --frozen --path=vendor/bundle 
       - save_cache:
           key: bundle-v2-{{ checksum "Gemfile.lock" }}
           paths:
