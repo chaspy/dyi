@@ -5,6 +5,18 @@ jobs:
       - image: ruby:2.6.2
     steps:
       - checkout
+      - restore_cache:
+          keys:
+            - bundle-v1-{{ checksum "Gemfile.lock" }}
+            - bundle-v1-
+      - run:
+          name: bundle install
+          command: |
+            bundle check --path=vendor/bundle || bundle install --clean --frozen --path=vendor/bundle --jobs=4 --retry=3
+      - save_cache:
+          key: bundle-v1-{{ checksum "Gemfile.lock" }}
+          paths:
+             - vendor/bundle
       - run:
           name: Test
           command: rails test
