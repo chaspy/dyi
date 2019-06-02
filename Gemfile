@@ -28,6 +28,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :profuction do
   gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :development, :test do
