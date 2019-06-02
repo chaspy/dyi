@@ -2,6 +2,7 @@ require 'test_helper'
 
 class GroupsControllerTest < ActionDispatch::IntegrationTest
   setup do
+    @event = events(:one)
     @group = groups(:one)
   end
 
@@ -17,7 +18,7 @@ class GroupsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create group" do
     assert_difference('Group.count') do
-      post groups_url, params: { group: { event_id: @group.event_id, note: @group.note } }
+      post groups_url, params: { group: { event_id: @event.id, note: @group.note } }
     end
 
     assert_redirected_to group_url(Group.last)
